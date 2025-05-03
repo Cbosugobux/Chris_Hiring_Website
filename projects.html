@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chris Bushelman - Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="static\styles.css" />
+</head>
+<body>
+
+  <!-- Header/Navbar -->
+  <header class="navbar">
+    <h1 class="logo">Chris Bushelman</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="section-title">Featured Projects</h1>
+
+    <div class="project">
+    <h2 class="project-title">Quest All Time Top 10</h2>
+    <a href="https://cbosugobux.github.io/QuestAllTimeTop10/" class="project-link" target="_blank">
+      <i class="fas fa-arrow-right"></i> View Project
+    </a>
+    <div class="project-description">
+      This project replaced a static PDF version of Quest Swim Team’s all-time Top 10 performance list. Previously, coaches had to manually check and update these documents by hand.
+
+      I built an interactive web app that uses manually downloaded JSON files from USA Swimming to display this data. The app is written in JavaScript using D3.js, and styled with HTML and CSS.
+
+      It is now embedded on the official team website at QuestSwimming.com.
+    </div>
+    </div>
+    <div class="project">
+    <h2 class="project-title">Stock Data Project</h2>
+    <a href="https://cbosugobux.github.io/StockDataAnalysis/" class="project-link" target="_blank">
+      <i class="fas fa-arrow-right"></i> View Project
+    </a>
+    <div class="project-description">
+      This group project explored how the tech sector performed during the first year of Donald Trump’s presidency versus Joe Biden’s first year.
+
+      I used Python's yfinance module to collect data on selected stocks and built a MongoDB Atlas database to store and share data with my teammates. I also developed the index.html file and structured the layout of other project pages.
+
+      We visualized the results using GeoJSON, Matplotlib, and other Python visualization tools.
+    </div>
+    </div>
+
+  <div class="project">
+    <h2 class="project-title">SQLAlchemy Climate Analysis</h2>
+    <a href="https://github.com/U-of-Richmond-Data-Course/sqlalchemy-challenge.git" class="project-link" target="_blank">
+      <i class="fas fa-arrow-right"></i> View Project
+    </a>
+    <div class="project-description">
+      In this solo project, I analyzed weather data from multiple stations across Hawaii using a SQLite database and SQLAlchemy to query and extract data.
+
+      I created charts and insights based on climate trends and then built a Flask web app with multiple API routes to serve the queried results in JSON format.
+
+      The project showcased both backend querying skills and the ability to build RESTful APIs for data access.
+    </div>
+    </div>
+
+    <div class="project">
+    <h2 class="project-title">March Madness Predictor App</h2>
+    <a href="https://github.com/Cbosugobux/projectFour.git" class="project-link" target="_blank">
+      <i class="fas fa-arrow-right"></i> View Project
+    </a>
+    <div class="project-description">
+      This project started as a personal challenge: could I build a model to predict NCAA March Madness outcomes using real stats and historical data?
+
+      I scraped gamelog data from Basketball Reference for all 434 Division I men's teams and calculated rolling averages from the last 5, 10, and 15 games. I weighted recent games more heavily and trained an XGBoost model using these inputs.
+
+      The final product was a Flask web app where users could input any two teams and get back predicted scores, win probabilities, and spread insights. It later became our class capstone, with my teammates extending it to Sweet 16 forecasts.
+
+      The model achieved 56.6% accuracy — not perfect, but promising. Most importantly, it showed how even strong models can't fully predict human emotion, momentum, or willpower.
+    </div>
+    </div>
+
+    </main>
+</body>
+  
+    <footer>
+        <p>&copy; 2025 Chris Bushelman. All rights reserved.</p>
+    </footer>
+
+
+</html>
